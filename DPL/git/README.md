@@ -4,7 +4,7 @@
 
 ***
 
-INDICE
+## INDICE
 
 1. [Descargar e instalar Git.](#_page1_x56.70_y110.45)
 2. [Configurando el Git.](#_page2_x56.70_y110.45)
@@ -38,11 +38,14 @@ git --version
 ## 2. Configurando el Git.
 
 Para que nuestros mensajes de confirmación tengan más información de quién los ha realizado, configuraremos nuestro git con nuestro nombre y nuestro email. Así, cada vez que hagamos un cambio, podrán saber quien ha sido y tengan algún método de comunicación poniendo nuestro email.
-`
-git config --global user.name "Your Name"![](img/03.png)
+
+```
+git config --global user.name "Your Name"
 
 git config --global user.email "youremail@domain.com"
-`
+```
+![](img/03.png)
+
 Si queremos cambiar algún valor de los anteriores o añadir uno nuevo, solo tendremos que ir al archivo de gitconfig y con un editor de texto, modificar su contenido.
 
 `
