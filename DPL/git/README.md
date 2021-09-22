@@ -1,6 +1,6 @@
 ﻿Daniel de Jesús Álvarez Miranda DAW – 2º B
 
-` `**Instalar G  IT** 
+*Instalar G  IT*
 
 **Sumario**
 
