@@ -4,6 +4,8 @@
 
 # Repositorios en Git
 
+***
+
 ## Indice
 
 1. [Configuración...................................................................................................................................2](#_page1_x56.70_y110.45)
@@ -13,14 +15,15 @@
 1. [Modificación de Ficheros.................................................................................................................4](#_page3_x56.70_y396.40)
 6. [Historial............................................................................................................................................5](#_page4_x56.70_y96.65)
 
+***
 
 1. ## Configuración.
 
-![](01.jpeg)**
+![](img/01.jpeg)**
 
 Modificamos el archivo de configuración de git para personalizarlo con nuestro nombre, email y un color de interfaz.
 
-![](02.jpeg)
+![](img/02.jpeg)
 
 2. ## Creación de un repositorio.
 
@@ -28,23 +31,23 @@ Crearemos un repositorio de la asignatura llamado DPL y luego mostramos su conte
 
 3. ## Comprobar el estado del repositorio.
 
-![](03.jpeg)
+![](img/03.jpeg)
 
 Creamos un fichero de texto y luego comprobamos el estado del repositorio. Podemos ver que hay cambios que no se han añadido en un commit.
 
 Añadimos todos los cambios al commit y volvemos a comprobar el estado del repositorio. Como podemos ver, los cambios se han añadido.
 
-![](04.jpeg)
+![](img/04.jpeg)
 
 4. ## Realizar Commit.
 
-![](05.jpeg)
+![](img/05.jpeg)
 
 Vamos a lanzar el comando commit con un mensaje descriptivo. Esto nos ayudará en un futuro a la hora de encontrar un commit específico en nuestra rama.
 
 5. ## Modificación de Ficheros.
 
-![](06.jpeg)
+![](img/06.jpeg)
 
 Vamos a modificar el contenido del fichero indice.txt. Luego mostramos su contenido y mostramos los cambios respecto al último commit con el comando diff.
 
@@ -52,8 +55,8 @@ Vamos a modificar el contenido del fichero indice.txt. Luego mostramos su conten
 
 Añadimos los cambios que hemos hecho en el fichero al commit y le añadir un mensaje descriptivo. Mostramos los cambios de la última versión del repositorio con respecto a la anterior. Después cambiamos el mensaje descriptivo del commit por otro y volvemos a mostrar los cambios.
 
-![](07.jpeg)
+![](img/07.jpeg)
 
-![](08.jpeg)
+![](img/08.jpeg)
 
-![](09.jpeg)
+![](img/09.jpeg)
