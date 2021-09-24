@@ -17,21 +17,21 @@
 
 ## 1. Configuración.
 
-![](img/01.jpeg)**
-
 Modificamos el archivo de configuración de git para personalizarlo con nuestro nombre, email y un color de interfaz.
 
-![](img/02.jpeg)
+![](img/01.jpeg)
 
 ## 2. Creación de un repositorio.
 
 Crearemos un repositorio de la asignatura llamado DPL y luego mostramos su contenido.
 
+![](img/02.jpeg)
+
 ## 3. Comprobar el estado del repositorio.
 
-![](img/03.jpeg)
-
 Creamos un fichero de texto y luego comprobamos el estado del repositorio. Podemos ver que hay cambios que no se han añadido en un commit.
+
+![](img/03.jpeg)
 
 Añadimos todos los cambios al commit y volvemos a comprobar el estado del repositorio. Como podemos ver, los cambios se han añadido.
 
@@ -39,15 +39,15 @@ Añadimos todos los cambios al commit y volvemos a comprobar el estado del repos
 
 ## 4. Realizar Commit.
 
-![](img/05.jpeg)
-
 Vamos a lanzar el comando commit con un mensaje descriptivo. Esto nos ayudará en un futuro a la hora de encontrar un commit específico en nuestra rama.
+
+![](img/05.jpeg)
 
 ## 5. Modificación de Ficheros.
 
-![](img/06.jpeg)
-
 Vamos a modificar el contenido del fichero indice.txt. Luego mostramos su contenido y mostramos los cambios respecto al último commit con el comando diff.
+
+![](img/06.jpeg)
 
 ## 6. Historial.
 
