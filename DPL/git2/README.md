@@ -1,8 +1,6 @@
 ﻿Daniel de Jesús Álvarez Miranda DAW – 2º B
 
-# Manipulación de
-
-# Repositorios en Git
+# Manipulación de Repositorios en Git
 
 ***
 
