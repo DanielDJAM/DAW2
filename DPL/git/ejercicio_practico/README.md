@@ -1,7 +1,7 @@
 ﻿Daniel de Jesús Álvarez Miranda		DAW – 2º
 
 
-**Ejercicio Práctico**
+# Ejercicio Práctico
 
 ----
 
@@ -21,7 +21,9 @@ Modificamos el texto y añadimos nuestro nombre en lugar de nombre_alumno.
 
 ![](img/04.png)
 
-![](img/05.png)Nos movemos a la rama main y creamos un fichero html.
+![](img/05.png)
+
+Nos movemos a la rama main y creamos un fichero html.
 
 
 Fusionamos las ramas y subimos los cambios.
