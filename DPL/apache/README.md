@@ -34,11 +34,11 @@ sudo apt install apache2
 
 ```
 
-![](02.png)
+![](img/02.png)
 
 Si nos encontramos con el siguiente problema, podemos solucionarlo a continuación.
 
-![](03.png)
+![](img/03.png)
 
 El problema es debido a que el puerto 80 ya está siendo utilizado por otro programa. Por lo que tendremos que decirle que use otro diferente. Para ello tendremos que ir a un archivo de contiguración. Podemos hacerlo con el siguiente comando.
 
@@ -50,7 +50,7 @@ sudo nano /etc/apache2/ports.conf
 
 Dentro del fichero cambiamos el Listen 80 por 8081.
 
-![](04.png)
+![](img/04.png)
 
 Tendremos que hacer lo mismo en el siguiente fichero. Cambiamos 80 por 81.
 
@@ -72,7 +72,7 @@ sudo systemctl status apache2
 
 ```
 
-![](06.png)
+![](img/06.png)
 
 Ajustamos la configuración del firewall. Usamos el siguiente comando.
 
@@ -84,7 +84,7 @@ sudo ufw app list
 
 Después veremos el siguiente mensaje.
 
-![](07.png)
+![](img/07.png)
 
 
 | Aplicación | Descripción |
@@ -106,7 +106,7 @@ sudo ufw allow 'Apache'
 
 ```
 
-![](08.png)
+![](img/08.png)
 
 
 Tendremos que ver el estado del firewall. Para ello recurrimos al siguiente comando. De estar inactivo, tendremos que habilitarlo.
@@ -119,11 +119,11 @@ sudo ufw enable
 
 ```
 
-![](09.png)
+![](img/09.png)
 
 Volvemos a comprobar.
 
-![](10.png)
+![](img/10.png)
 
 
 Ahora comprobamos que el estado de Apache2 esté funcionando correctamente.
@@ -134,7 +134,7 @@ sudo systemctl status apache2
 
 ```
 
-![](11.png)
+![](img/11.png)
 
 <a name = "item3"></a>
 ## Acceso
@@ -142,4 +142,4 @@ sudo systemctl status apache2
 
 Para comprobar que todo está correctamente, vamos al navegador y entramos por el puerto que acabamos de configurar. En nuestro caso, el puerto 8081.
 
-![](12.png)
+![](img/12.png)
