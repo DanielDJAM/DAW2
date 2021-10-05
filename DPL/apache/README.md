@@ -7,9 +7,11 @@
 
 
 ## Indice
----
+
 [Previo](#item1)
+
 [Instalación Apache](#item2)
+
 [Acceso](#item3)
 
 
