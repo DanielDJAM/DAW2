@@ -64,9 +64,13 @@ Movemos el archivo descomprimido a la ruta deseada y creamos un enlace simbólic
 
 sudo mv wildfly-25.0.0.Final /opt/wildfly-25.0.0.Final
 
+sudo ln -s /opt/wildfly-25.0.0.Final /opt/wildfly
+
+
 ```
 
-![](img/04.png)sudo ln -s /opt/wildfly-25.0.0.Final /opt/wildfly
+![](img/04.png)
+
 
 
 ### Acceso
@@ -83,7 +87,7 @@ sudo chown -R wildfly:wildfly /opt/wildfly/
 
 ![](img/05.png)
 
-Configurar e Iniciar
+### Configurar e Iniciar
 
 ```console
 
@@ -107,7 +111,7 @@ sudo nano /etc/wildfly/wildfly.conf
 
 ![](img/07.png)
 
-Configurar Arranque
+### Configurar Arranque
 
 Para configurar el arranque, lanzamos los siguientes comandos:
 
