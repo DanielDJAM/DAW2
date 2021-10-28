@@ -17,6 +17,7 @@
 [EXTRA](#item5)
 
 
+<a name = "item1"></a>
 
 ## Instalar Nginx.
 
@@ -29,6 +30,8 @@ sudo apt install nginx
 ```
 
 ![](img/01.png)
+
+<a name = "item2"></a>
 
 ## Configurar Firewall
 
@@ -54,6 +57,8 @@ sudo ufw allow 'Nginx HTTP'
 ![](img/03.png)
 
 ![](img/04.png)
+
+<a name = "item3"></a>
 
 ## Comprobar el servidor web.
 
@@ -88,6 +93,8 @@ http://your_server_ip:puerto
 ```
 
 ![](img/07.png)
+
+<a name = "item4"></a>
 
 ## Configurar bloques de servidor
 
@@ -134,21 +141,21 @@ nano /var/www/your_domain/html/index.html
 
 ```console
 
-`   `<html>
+ <html>
 
-`       `<head>
+    <head>
 
-`           `<title>Welcome to your_domain!</title>
+      <title>Welcome to your_domain!</title>
 
-`       `</head>
+    </head>
 
-`       `<body>
+    <body>
 
-`           `<h1>Success!  The your_domain server block is working!</h1>
+    <h1>Success!  The your_domain server block is working!</h1>
 
-`       `</body>
+  </body>
 
-`   `</html>
+</html>
 
 ```
 
@@ -165,29 +172,29 @@ sudo nano /etc/nginx/sites-available/your_domain
 
 ```console
 
-`   `/etc/nginx/sites-available/your_domain
+ server {
 
-`   `server {
+      listen 80;
 
-`           `listen 80;
+      listen [::]:80;
 
-`           `listen [::]:80;
+      root /var/www/your_domain/html;
 
-`           `root /var/www/your_domain/html;
+      index index.html index.htm index.nginx-debian.html;
 
-`           `index index.html index.htm index.nginx-debian.html;
+      server_name your_domain www.your_domain;
 
-`           `server_name your_domain www.your_domain;
+      location / {
 
-`           `location / {
+      try_files $uri $uri/ =404;
 
-`                   `try_files $uri $uri/ =404;
+    }
 
-`           `}
+}
 
-`   `}
+```
 
-![](img/13.png)```
+![](img/13.png)
 
 Habilitamos el archivo creando un enlace simbólico entre él y el directorio sites-enabled.
 
@@ -213,17 +220,17 @@ sudo nano /etc/nginx/nginx.conf
 
 ```console
 
-` `http {
+http {
 
-`   `...
+...
 
-`   `server_names_hash_bucket_size 64;
+    server_names_hash_bucket_size 64;
 
-`   `...
+...
 
-` `}
+}
 
-` `…
+…
 
 ```
 
@@ -252,6 +259,8 @@ sudo systemctl restart nginx
 ```
 
 ![](img/19.png)
+
+<a name = "item5"></a>
 
 ## EXTRA
 
