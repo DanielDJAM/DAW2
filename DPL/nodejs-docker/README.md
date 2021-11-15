@@ -40,7 +40,7 @@ Creamos un directorio y dentro de este creamos un fichero JSON que contenga lo s
 ```
 
 
-![](img/01.png)
+![](img/00.png)
 
 Si no tenemos npm instalado, podemos instalarlo con el comando:
 
@@ -59,7 +59,7 @@ Al tener una versión superior a la 5, nos creará un fichero package-lock.json 
 La estructura del proyecto actualmente es la siguiente:
 
 
-![](img/02.png)
+![](img/01.png)
 
 Luego creamos el fichero server.js.
 
@@ -82,7 +82,7 @@ app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 ```
 
-![](img/03.png)
+![](img/02.png)
 
 
 <a name = "item2"></a>
@@ -113,7 +113,7 @@ EXPOSE 8080
 CMD [ "node", "server.js" ]
 ```
 
-![](img/04.png)
+![](img/03.png)
 
 Creamos un fichero .dockerignore en el mismo directorio que el Dockerfile con lo siguiente:
 
@@ -123,7 +123,7 @@ node_modules
 npm-debug.log
 ```
 
-![](img/05.png)
+![](img/04.png)
 
 
 <a name = "item3"></a>
@@ -136,7 +136,7 @@ Nos situamos donde hayamos creado el fichero Dockerfile y lanzamos el siguiente 
 docker build . -t <your username>/node-web-app
 ```
 
-![](img/06.png)
+![](img/05.png)
 
 Comprobamos que nuestra imagen se ha construido con el comando:
 
@@ -144,7 +144,7 @@ Comprobamos que nuestra imagen se ha construido con el comando:
 sudo docker images
 ```
 
-![](img/07.png)
+![](img/06.png)
 
 
 <a name = "item4"></a>
@@ -159,7 +159,7 @@ docker run -p 49160:8080 -d <your username>/node-web-app
 
 El puerto 49160 es el puerto que tendremos que poner en la url del navegador. En nuestro caso, pusimos 8180.
 
-![](img/08.png)
+![](img/07.png)
 
 
 <a name = "item5"></a>
@@ -174,4 +174,4 @@ localhost:8180
 
 Y nos debería dar algo como esto.
 
-![](img/09.png)
+![](img/08.png)
